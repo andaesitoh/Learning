@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Tests</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="index.html">Home</a></li>
+          <li><a class="main-nav-link" href="tests.html">Score</a></li>
+          <li><a class="main-nav-link" href="about.html">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="container">
+        <h1 class="heading-primary margin-bottom-md">Assessment</h1>
+        <h2 class="heading-secondary margin-bottom-sm">
+          Demographic Variables
+        </h2>
+        <div class="demographics">
+          <form class="demographic margin-bottom-sm">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="100" />
+          </form>
+
+          <form class="demographic margin-bottom-sm">
+            <label for="sex">Sex</label>
+            <select class="select">
+              <option
+                type="option"
+                class="form-question"
+                name="form-question"
+                value="male"
+              >
+                Male
+              </option>
+              <option
+                type="option"
+                class="form-question"
+                name="form-question"
+                value="female"
+              >
+                Female
+              </option>
+            </select>
+          </form>
+
+          <form class="demographic margin-bottom-sm">
+            <label for="education">Education</label>
+            <select id="education" class="select">
+              <option value="primary">Primary School</option>
+              <option value="high-school">High School</option>
+              <option value="college">College</option>
+              <option value="university">University</option>
+            </select>
+          </form>
+        </div>
+
+        <h2 class="heading-secondary margin-bottom-md">
+          Neuropsychological Tests
+        </h2>
+        <h3 class="heading-tertiary margin-bottom-sm">Cognitive Domain</h3>
+
+        <!-- MEMORY DOMAIN -->
+        <div class="domain"><span class="domain-text">Memory</span></div>
+
+        <div class="memory">
+          <form class="test-selection margin-bottom-sm">
+            <label for="test-type">Test</label>
+            <select class="select">
+              <option type="option" class="form-question" name="form-question">
+                RAVLT
+              </option>
+              <option type="option" class="form-question" name="form-question">
+                RCFT
+              </option>
+            </select>
+          </form>
+
+          <form class="norm-selection margin-bottom-sm">
+            <label for="norm-selection">Norms</label>
+            <select class="select">
+              <option type="option" class="form-question" name="form-question">
+                Schmidt; from Strauss et al. (2006)
+              </option>
+              <option type="option" class="form-question" name="form-question">
+                Geffen; from Strauss et al. (2006)
+              </option>
+            </select>
+          </form>
+
+          <form class="score">
+            <label for="score-entry">Score</label>
+            <input
+              type="text"
+              class="form-question"
+              name="form-question"
+              id="score-entered"
+            />
+          </form>
+        </div>
+
+        <button class="submit-btn">Submit</button>
+
+        <div id="result">Hi</div>
+      </section>
+    </main>
+  </body>
+</html>
